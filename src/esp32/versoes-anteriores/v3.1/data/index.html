@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detector de Quedas</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div><p class="eyebrow">ESP32 • MPU6050</p><h1>Detector de Quedas</h1></div>
+    <a class="link-logs" href="/logs">Ver logs ↗</a>
+  </header>
+
+  <main>
+    <section class="painel-status">
+      <div class="status-item"><span class="bolinha" id="wifi-bolinha"></span><div><small>Conexão Wi-Fi</small><strong id="wifi">Verificando...</strong></div></div>
+      <div class="status-item"><span class="bolinha" id="sensor-bolinha"></span><div><small>Sensor MPU6050</small><strong id="sensor">Verificando...</strong></div></div>
+      <div class="status-item"><span class="bolinha" id="buzzer-bolinha"></span><div><small>Buzzer</small><strong id="buzzer">Desligado</strong></div></div>
+    </section>
+
+    <section class="cartao alerta-cartao" id="cartao-alerta">
+      <div><small>Estado do sistema</small><h2 id="status">Aguardando dados...</h2></div>
+      <span class="selo" id="selo-alerta">NORMAL</span>
+    </section>
+
+    <section class="cartao">
+      <div class="cabecalho-cartao"><div><small>Leituras em tempo real</small><h2>Medições do acelerômetro</h2></div><span class="ao-vivo">● AO VIVO</span></div>
+      <div class="leituras">
+        <div class="leitura"><span>Eixo X</span><strong id="x">--</strong></div>
+        <div class="leitura"><span>Eixo Y</span><strong id="y">--</strong></div>
+        <div class="leitura"><span>Eixo Z</span><strong id="z">--</strong></div>
+      </div>
+      <div class="grafico-titulo"><strong>Histórico das medições</strong><small>Últimas 60 leituras recebidas</small></div>
+      <canvas id="grafico" height="230"></canvas>
+      <div class="legenda"><span class="leg-x">● X</span><span class="leg-y">● Y</span><span class="leg-z">● Z</span></div>
+    </section>
+
+    <section class="cartao">
+      <small>Comandos remotos</small><h2>Controle do atuador</h2>
+      <p class="descricao">Envie comandos ao ESP32 pela rede Wi-Fi.</p>
+      <div class="acoes">
+        <button class="botao principal" id="btn-teste" type="button">Testar buzzer</button>
+        <button class="botao perigo" id="btn-reset" type="button">Silenciar / resetar alerta</button>
+      </div>
+      <p class="mensagem" id="mensagem-comando" role="status"></p>
+    </section>
+    <p class="atualizacao" id="atualizacao">Aguardando conexão com o dispositivo.</p>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

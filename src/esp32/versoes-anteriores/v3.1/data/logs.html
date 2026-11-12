@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logs - Detector de Quedas</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div><p class="eyebrow">HISTÓRICO DO DISPOSITIVO</p><h1>Logs do sistema</h1></div>
+    <a class="link-logs" href="/">← Voltar ao painel</a>
+  </header>
+  <main>
+    <section class="cartao">
+      <div class="barra"><strong>Registros de eventos</strong><button class="botao principal" id="atualizar" type="button">Atualizar</button></div>
+      <pre id="lista-logs">Carregando logs...</pre>
+      <p class="mensagem" id="mensagem-logs"></p>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

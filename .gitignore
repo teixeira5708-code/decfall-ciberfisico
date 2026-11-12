@@ -1,0 +1,15 @@
+# Segredos (Wi-Fi / Telegram)
+secrets.h
+
+# Arduino / PlatformIO
+.pio/
+.vscode/
+build/
+*.elf
+*.bin
+*.map
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+*.zip
