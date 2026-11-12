@@ -6,11 +6,13 @@ Sistema ciberfísico baseado em **ESP32** que detecta possíveis quedas de uma p
 
 ## Integrantes da Equipe
 
-| Nome completo | RA |
-|---|---|
-| Lucas ______________ | ________ |
-| ______________ | ________ |
-| ______________ | ________ |
+| Nome completo |
+|---|
+| Lucas Teixiera Coelho |
+| Carlos Eduardo Godoy Esmanhotto | 
+| Lucas Pereira Maciel | 
+|Luiz Gustavo de Souza Murbach |
+| Victor Schotten Rosa |
 
 ## Arquitetura da Solução
 
@@ -92,19 +94,4 @@ Edite `secrets.h` com Wi-Fi, token e chat ID. **Esse arquivo não é versionado*
 - Conecte-se à mesma rede Wi-Fi e abra `http://<IP do ESP32>`, ou conecte-se à rede `DECFALL` e abra `http://192.168.4.1`.
 - `src/client/index.html` é uma cópia legível do painel; a versão embarcada está em `src/esp32/Detector/pagina.h`.
 
-## Estrutura do repositório
 
-```
-├── docs/                 # arquitetura.png, esquematico.png
-├── src/
-│   ├── esp32/Detector/   # firmware atual (Detector.ino, pagina.h, secrets.h.example)
-│   ├── esp32/versoes-anteriores/  # histórico de protótipos
-│   └── client/index.html # painel web
-├── README.md
-└── .gitignore
-```
-
-## Vídeo demonstrativo / Screenshots
-
-- Vídeo: _(cole aqui o link do YouTube/Drive)_
-- Screenshots: _(adicione imagens em `docs/` e referencie aqui, ex.: `![Painel](docs/painel.png)`)_
