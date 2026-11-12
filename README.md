@@ -11,7 +11,7 @@ Sistema ciberfísico baseado em **ESP32** que detecta possíveis quedas de uma p
 | Lucas Teixiera Coelho |
 | Carlos Eduardo Godoy Esmanhotto | 
 | Lucas Pereira Maciel | 
-|Luiz Gustavo de Souza Murbach |
+| Luiz Gustavo de Souza Murbach |
 | Victor Schotten Rosa |
 
 ## Arquitetura da Solução
